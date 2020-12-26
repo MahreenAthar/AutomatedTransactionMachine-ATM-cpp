@@ -6,6 +6,7 @@
 #include "Bank.cpp"
 #include "Account.cpp"
 #include "AccountTransactions.h"
+#include <ctime>
 using namespace std;
 
 AccountTransactions::AccountTransactions()
@@ -81,24 +82,48 @@ double AccountTransactions::getAmount()
     return Amount;
 }
 
-bool AccountTransactions::TransactionGrant()
+bool AccountTransactions::TransactionGrant(bool grant_)
 {
-    bool grant = true;
+    bool grant = grant_;
     return grant;
 }
-void AccountTransactions::Withdraw()
+void AccountTransactions::Withdraw(double money_)
 {
-    cout<<"Withdrawal Successful."<<endl;
+    if(Balance < money_)
+    {
+        TransactionGrant(true);
+        Balance = Balance - money_;
+        cout<<"Withdrawal Successful."<<endl;
+    }
+    else
+    {
+        TransactionGrant(false);
+        cout<<"Withdrawal Error."<<endl;
+        cout<<"Sorry the amount you have entered succeeds your current balance."<<endl;       
+    }
+
 }
-void AccountTransactions::Deduct()
+// void AccountTransactions::Deduct()
+// {
+//     cout<<"Deducted."<<endl;
+// }
+void AccountTransactions::Transfer(double money_)
 {
-    cout<<"Deducted."<<endl;
-}
-void AccountTransactions::Transfer()
-{
-    cout<<"Transfer successful."<<endl;
+    Account account_;
+    cout<<"Enter the account number to which you want to transfer money: "<<endl;
+    cin>>account_.AccountNumber;
+    cout<<"Enter account owner's name: "<<endl;
+    cin>>account_.Owner;
+
+    account_.Balance = account_.Balance + money_;
+    
+    cout<<"You have successfully tansferred the money."<<endl;
 }
 void AccountTransactions::Statement()
 {
     cout<<"Mini Statement."<<endl;
+    cout<<"Account Owner: "<<Owner<<endl;
+    cout<<"Account Number: "<<AccountNumber<<endl;
+    cout<<"Your current balance is: "<<Balance<<endl;
+    cout<<""<<endl;
 }

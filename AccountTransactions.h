@@ -5,6 +5,7 @@
 #include<cstring>
 #include "Bank.cpp"
 #include "Account.cpp"
+#include <ctime>
 using namespace std;
 
 class AccountTransactions : public Account
@@ -33,9 +34,9 @@ public:
     int getTransactionID();
     void setAmount(double Amount_);
     double getAmount();
-    bool TransactionGrant();
-    void Withdraw();
-    void Deduct();
-    void Transfer();
+    bool TransactionGrant(bool grant_);
+    void Withdraw(double money_);
+    //void Deduct();
+    void Transfer(double money_);
     void Statement();
 };
