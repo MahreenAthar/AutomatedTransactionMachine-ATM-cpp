@@ -1,6 +1,8 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
+#ifndef AAA_HEADER
+#define AAA_HEADER
 #include "DebitCard.h"
 using namespace std;
 
@@ -52,3 +54,4 @@ void DebitCard::ChangePIN(int PIN_)
     cout<<"PIN Changed Successfully."<<endl;
     cout<<"Your new PIN is: "<<PIN<<endl;
 }
+#endif

@@ -1,6 +1,8 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
+#ifndef AAA_HEADER
+#define AAA_HEADER
 #include "Account.h"
 using namespace std;
 
@@ -53,3 +55,4 @@ void Account::AddAccount(string Owner_, long int AccountNumber_, double Balance_
     cin>>Balance_;
     Balance = Balance_;
 }
+#endif

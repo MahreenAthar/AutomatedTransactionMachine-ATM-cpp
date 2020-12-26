@@ -1,8 +1,8 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
-#include<iostream>
-#include<cstring>
+#ifndef AAA_HEADER
+#define AAA_HEADER
 #include "Bank.h"
 using namespace std;
 
@@ -52,3 +52,4 @@ string Bank::getCity()
 {
     return City;
 }
+#endif

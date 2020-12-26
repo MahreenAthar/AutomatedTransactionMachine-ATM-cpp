@@ -1,10 +1,10 @@
 #include<iostream>
 #include<cstring>
-#include "Bank.cpp"
-#include "Customer.cpp"
-#include "AccountTransactions.cpp"
-#include "DebitCard.cpp"
-#include "Account.cpp"
+#include "Bank.h"
+#include "Customer.h"
+#include "AccountTransactions.h"
+#include "DebitCard.h"
+#include "Account.h"
 using namespace std;
 
 int main()
