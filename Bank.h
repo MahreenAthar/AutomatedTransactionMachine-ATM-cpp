@@ -2,7 +2,7 @@
 //Mahreen Athar
 //BS(DS-N)
 #include<iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 
 class Bank
