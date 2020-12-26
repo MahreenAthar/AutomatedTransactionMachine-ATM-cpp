@@ -1,9 +1,6 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
-#include<iostream>
-#include<cstring>
-#include "Bank.cpp"
 #include "Customer.h"
 using namespace std;
 

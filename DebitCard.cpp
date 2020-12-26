@@ -1,10 +1,6 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
-#include<iostream>
-#include<cstring>
-#include "Bank.cpp"
-#include "Account.cpp"
 #include "DebitCard.h"
 using namespace std;
 

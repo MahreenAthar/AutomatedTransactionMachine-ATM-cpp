@@ -1,12 +1,7 @@
 //19I-1712
 //Mahreen Athar
 //BS(DS-N)
-#include<iostream>
-#include<cstring>
-#include "Bank.cpp"
-#include "Account.cpp"
 #include "AccountTransactions.h"
-#include <ctime>
 using namespace std;
 
 AccountTransactions::AccountTransactions()
